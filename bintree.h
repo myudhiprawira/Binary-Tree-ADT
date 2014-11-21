@@ -1,14 +1,15 @@
-/* Nama/NIM	:	Mario Yudhiprawira/18213024
-Nama File	:	PP11-18213024-211114-01.h
-Tanggal		:	21 November 2014
-Deskripsi	:	File Header untuk ADT Pohon Biner */
+#include <stddef.h>
 
+
+/* Selektor */
 
 #define Nil NULL
-/* Selektor */
 #define Akar(P) (P)->info
 #define Left(P) (P)->left
 #define Right(P) (P)->right
+
+// Konstruktor Tuple
+
 
 typedef int infotype;
 typedef struct tNode *address;
@@ -17,22 +18,23 @@ typedef struct tNode {
 						address left;
 						address right;
 						} Node;
+typedef address BinTree;
 						
 // Konstruktor & Selektor
 
-void MakeTree(infotype Akar, BinTree L, Bintree R, Bintree *P);
+void MakeTree(infotype Akar, BinTree L, BinTree R, BinTree *P);
 /* { I.S. Sembarang }
 { F.S. Menghasilkan sebuah pohon P }
 { Menghasilkan sebuah pohon biner P dari A, L, dan R, jika alokasi berhasil }
 { Menghasilkan pohon P yang kosong (Nil) jika alokasi gagal } */
 
-infotype Akar(BinTree P);
+// infotype Akar(BinTree P);
 /* { Mengirimkan nilai Akar pohon biner P } */
 
-BinTree Left(BinTree P);
+// BinTree Left(BinTree P);
 /* { Mengirimkan subpohon kiri pohon biner P } */
 
-BinTree Right(BinTree P);
+// BinTree Right(BinTree P);
 /* { Mengirimkan subpohon kanan pohon biner P } */
 
 bool IsTreeEmpty(BinTree P);
